@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt-get update
-RUN apt-get install -y python-pip
+RUN apt-get install -y python-pip git
 
 COPY requirements.txt /project/requirements.txt
 RUN pip install -r /project/requirements.txt
